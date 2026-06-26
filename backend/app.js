@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config();
 import express, { urlencoded } from "express";
 import mongoose from "mongoose";
 import userRoutes from './routes/userRoutes.js';

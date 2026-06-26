@@ -4,7 +4,6 @@ import {useNavigate} from 'react-router-dom';
 import { Context } from "../context/manageContext.jsx";
 
 
-
 export const Login = () => {
 
     const [name, setName] = useState("");
@@ -15,7 +14,7 @@ export const Login = () => {
     const navigate = useNavigate();
     const {manageContextOnLogin} = useContext(Context);
 
-    const bakendURl = process.env.BAKEND_SERVER;
+    const bakendURl = import.meta.env.VITE_BACKEND_URL;
 
     const register = async (name, userName, password) => {
         if (status === '0') {

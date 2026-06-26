@@ -42,7 +42,7 @@ export default function Meet() {
 
 
         async function initialise() {
-            socket.current = io(process.env.BACKEND_SERVER);
+            socket.current = io(import.meta.env.VITE_BACKEND_URL);
 
             await startLocalMedia();
 
