@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.home{
+    height: 100vh;
+    width: 100vw;
+    background: url('/background.png') center/cover no-repeat;
+}
+.home-nav-bar{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+} 
+.home-nav-bar h2{
+    margin: 0%;
+    color: antiquewhite;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.home-nav-head{
+    display: flex;
+}
+.home-nav-acc{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.main-content{
+    margin-left: 50px;
+    margin-top: 200px;
+}
+.main-content p{
+    font-size: xxx-large;
+    color: azure;
+    font-weight: bold;
+}
+.main-content button{
+    height: 80px;
+    width: 200px;
+    border-radius: 1.7rem;
+    background-color: bisque;
+    font-size: x-large;
+    color: slategray;
+    margin-left: 50px;
+}
+.login-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.login-box{
+    border: 1px solid black;
+    border-radius: 1.7rem;
+    height: 75%;
+}
+.auth-option{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.auth-option button{
+    height: 35px;   
+    width: 80px;
+    background-color: white;
+    border-radius: 1.7rem;
+}
+.auth-option button:hover{
+    cursor: pointer;
+}
+#auth-signIn{
+    margin-right: 10px;
+}
+.login{
+    /* border: 1px solid black; */
+    height: 18rem;
+    width: 30rem;
+    
+}
+.login-form{
+    height: 40px;
+    width: 70%;
+    margin-left: 65px;
+    margin-top: 40px;padding-left: 20px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.submit button{
+    height: 70px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 1.7rem;
+    font-size: large;
+    background-color: azure;
+}
+.submit button:active{
+    background-color:aliceblue;
+}
+.choice-container{
+    height: 100vh;
+    width: 100vw;
+    /* border: 1px solid black; */
+}
+.choice-option-container{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.choice-pannel button{
+    height: 60px;
+    width: 140px;
+    border-radius: 1.7rem;
+    background-color: aliceblue;
+    font-size: large;
+}
+#create-meet-btn{
+    margin-right: 20px;
+}
+#meet-code-input{
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    font-size: medium;
+}
+.meet-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.meet-code{
+    height: 30px;
+    width: 100vw;
+    background-color:seashell;
+    border: 1px solid black;
+}
+#meet-code-output{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size:large;
+}
+.meet-pannel{
+    /* flex: 1; */
+    height: calc(100vh - 30px);
+    width: 97vw;
+    margin-left: 15px;
+    /* background-color: grey; */
+    /* border: 1px solid black; */
+    border-radius: 1.7rem;
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+.meet-frame{
+    height: 100%;
+    width: 70%;
+    margin-top: 4px;
+    display: flex;
+    border-radius: 1.7rem;
+    border: 2px solid black;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    position: relative;
+}
+.other-meet-frame{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+}
+.remote-meet-frames{
+    height: 200px;
+    width: 300px;
+    flex-shrink: 0;
+}
+.my-meet-frame{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    height: 200px;
+    width: 300px;
+}
+.meet-frame video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.7rem;
+}
+.meet-chat-frame{
+    height: 100%;
+    width: 30%; 
+    margin-top: 4px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.7rem;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+.chat-div{
+    height: 93%;
+    margin-bottom: 2%;
+    overflow-y: auto;
+    border: 1px solid transparent;
+}
+.chat-msg{
+    height: 5%;
+    width: 96%;
+    display: flex;
+    margin-left: 2%;
+}
+#chat-message{
+    height: 100%;
+    width: 75%;
+}
+.chat-msg button{
+    width: 24%;
+    border-bottom-right-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+}
