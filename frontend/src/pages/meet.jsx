@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom"
 import { io } from 'socket.io-client'
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 export default function Meet() {
@@ -42,7 +43,7 @@ export default function Meet() {
 
 
         async function initialise() {
-            socket.current = io(`http://localhost:3000`);
+            socket.current = io(process.env.BACKEND_SERVER);
 
             await startLocalMedia();
 
