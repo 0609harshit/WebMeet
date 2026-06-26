@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom"
 import { io } from 'socket.io-client'
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 export default function Meet() {

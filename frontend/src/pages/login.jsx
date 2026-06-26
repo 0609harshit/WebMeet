@@ -2,8 +2,7 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import {useNavigate} from 'react-router-dom';
 import { Context } from "../context/manageContext.jsx";
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 export const Login = () => {
