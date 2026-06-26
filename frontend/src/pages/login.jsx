@@ -2,6 +2,8 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import {useNavigate} from 'react-router-dom';
 import { Context } from "../context/manageContext.jsx";
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 export const Login = () => {
@@ -14,10 +16,12 @@ export const Login = () => {
     const navigate = useNavigate();
     const {manageContextOnLogin} = useContext(Context);
 
+    const bakendURl = process.env.BAKEND_SERVER;
+
     const register = async (name, userName, password) => {
         if (status === '0') {
             try {
-                let response = await axios.post("http://localhost:3000/user/register", {
+                let response = await axios.post(`${bakendURL}/user/register`, {
                     name: name,
                     userName: userName,
                     password: password
