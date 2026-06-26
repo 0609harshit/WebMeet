@@ -42,7 +42,7 @@ export default function Meet() {
 
 
         async function initialise() {
-            socket.current = io(import.meta.env.VITE_BACKEND_URL);
+            socket.current = io("https://webmeet-59at.onrender.com");
 
             await startLocalMedia();
 

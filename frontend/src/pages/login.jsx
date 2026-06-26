@@ -14,12 +14,11 @@ export const Login = () => {
     const navigate = useNavigate();
     const {manageContextOnLogin} = useContext(Context);
 
-    const bakendURl = import.meta.env.VITE_BACKEND_URL;
 
     const register = async (name, userName, password) => {
         if (status === '0') {
             try {
-                let response = await axios.post(`${bakendURL}/user/register`, {
+                let response = await axios.post(`https://webmeet-59at.onrender.com/user/register`, {
                     name: name,
                     userName: userName,
                     password: password
@@ -36,7 +35,7 @@ export const Login = () => {
 
     const login = async(userName, password)=>{
         try{
-            let response = await axios.post(`${bakendURl}/user/login`, {
+            let response = await axios.post(`https://webmeet-59at.onrender.com/user/login`, {
                 userName: userName,
                 password: password
             })
